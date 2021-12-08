@@ -2,12 +2,13 @@
 Positivity, Negativity, All time high, All time low
 # add a .txt file with names of scrips (as in yahoo finace, forexample Tatamotors - "TATAMOTORS.NS", in capital letters with code name of exchange) line by line(with any numbering). yfinance library is used to retrieve data.
 
+
 import pandas as pd
 import yfinance as yf
 
 #scriptionary
 scrip_list = open("C:/scriplist.txt", 'r')
-with open("C:/Users/IwinJoseph/SM/scriplist.txt", 'r') as f:
+with open("C:/scriplist.txt", 'r') as f:
     scrip_list = [line.rstrip('\n') for line in f]
      
 
